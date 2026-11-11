@@ -5,7 +5,7 @@
       xmlns:dc="http://purl.org/dc/elements/1.1/" 
       version="2.0">
 <channel>
-<title>Reagan K&#39;s Blog</title>
+<title>Reagan Kahla&#39;s Blog</title>
 <link>https://your-website-url.example.com/</link>
 <atom:link href="https://your-website-url.example.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>A blog made for my SPMC 350 class</description>
@@ -64,7 +64,6 @@ font-style: inherit;">1</span></span></code></pre></div></div>
   <category>lowercaseword</category>
   <guid>https://your-website-url.example.com/posts/post-number-one.html</guid>
   <pubDate>Tue, 10 Nov 2026 06:00:00 GMT</pubDate>
-  <media:content url="https://your-website-url.example.com/posts/image.png" medium="image" type="image/png"/>
 </item>
 <item>
   <title>Welcome To My Blog</title>
