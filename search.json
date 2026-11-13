@@ -11,7 +11,7 @@
     "href": "posts/assignment1/index.html",
     "title": "Major Assignment #1",
     "section": "",
-    "text": "Anyone who watches or follows League of Legends Esports can agree on one thing: T1 is notorious for having a horrible pre-season. The team’s win rate is consistently negative, and it always looks like they won’t be making it to finals…but somehow they always do. How is that?"
+    "text": "Anyone who watches or follows League of Legends E-sports can agree on one thing: T1 is notorious for having a horrible pre-season. The team’s win rate is consistently negative, and it always looks like they won’t be making it to finals…but somehow they always do. How is that?\n\n\nCode\nlibrary(tidyverse)\n\nT1 &lt;- read_csv(\"T1_Team_Statistics.csv\")\n\nwinrate &lt;- T1 |&gt;\n  mutate(category = ifelse(grepl(\"LCK\", tournament), \"LCK\", \"Worlds\")) |&gt;\n  group_by(year, category) |&gt;\n  summarise(win_rate = mean(result == \"WIN\") * 100)\n\nwinrateplot &lt;- ggplot(winrate, aes(x = factor(year), y = win_rate, fill = category)) +\n  geom_bar(stat = \"identity\", position = \"dodge\") +\n  labs(\n    title = \"The dramatic difference between competitions\",\n    subtitle = \"T1's win rate is significantly improved at Worlds compared to their LCK games.\",\n    caption = \"Source: Games of Legends | Reagan Kahla\",\n    x = \"Year\",\n    y = \"Win Rate (%)\",\n    fill = \"Competition\"\n  ) +\n  scale_y_continuous(limits = c(0, 100)) +\n  scale_fill_manual(\n    values = c(\n      \"LCK\" = \"pink\",\n      \"Worlds\" = \"purple\"\n    )\n  ) +\n  theme_minimal()\n\nwinrateplot\n\n\n\n\n\n\n\n\n\nnext line"
   },
   {
     "objectID": "posts/post1/post-number-one.html",
