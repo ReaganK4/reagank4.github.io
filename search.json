@@ -7,6 +7,13 @@
     "text": "About this blog"
   },
   {
+    "objectID": "posts/post-number-one.html",
+    "href": "posts/post-number-one.html",
+    "title": "Post Number One",
+    "section": "",
+    "text": "This is a test to see if this works correctly!\n\nIf I keep writing does this also show or is it a new line?"
+  },
+  {
     "objectID": "posts/post-with-code/index.html",
     "href": "posts/post-with-code/index.html",
     "title": "Post With Code",
